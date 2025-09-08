@@ -215,6 +215,17 @@ namespace MyPizza
             _UpdateTotalPrice();
             _UpdateOrderSummary();
         }
+        private void rbEatIn_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void rbTakeOut_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
 
     }
 }
