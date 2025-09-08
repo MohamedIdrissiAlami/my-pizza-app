@@ -96,6 +96,7 @@
             this.btnResetForm.TabIndex = 16;
             this.btnResetForm.Text = "RESET FORM";
             this.btnResetForm.UseVisualStyleBackColor = false;
+            this.btnResetForm.Click += new System.EventHandler(this.btnResetForm_Click);
             // 
             // btnOrderPizza
             // 
@@ -312,7 +313,7 @@
             this.rbEatIn.Checked = true;
             this.rbEatIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbEatIn.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.rbEatIn.Location = new System.Drawing.Point(27, 33);
+            this.rbEatIn.Location = new System.Drawing.Point(27, 35);
             this.rbEatIn.Name = "rbEatIn";
             this.rbEatIn.Size = new System.Drawing.Size(79, 24);
             this.rbEatIn.TabIndex = 2;
@@ -326,7 +327,7 @@
             this.rbTakeOut.AutoSize = true;
             this.rbTakeOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbTakeOut.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Bold);
-            this.rbTakeOut.Location = new System.Drawing.Point(232, 33);
+            this.rbTakeOut.Location = new System.Drawing.Point(232, 34);
             this.rbTakeOut.Name = "rbTakeOut";
             this.rbTakeOut.Size = new System.Drawing.Size(103, 24);
             this.rbTakeOut.TabIndex = 1;
