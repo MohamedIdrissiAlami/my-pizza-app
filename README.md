@@ -31,7 +31,7 @@ A streamlined desktop application for customizing and ordering pizza, built with
 4. Run the application `(F5)`  
   
   ### 📸 Preview  
-  ![App Preview](screenshot.png)  
+  ![App Preview](https://github.com/MohamedIdrissiAlami/my-pizza-app/blob/main/Screenshot.png)  
 
 ### 💡 Highlights  
 * Event-driven architecture with CheckedChanged handlers
