@@ -1,6 +1,6 @@
 ﻿namespace MyPizza
 {
-    partial class Form1
+    partial class Pizza
     {
         /// <summary>
         /// Required designer variable.

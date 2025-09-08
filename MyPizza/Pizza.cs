@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace MyPizza
 {
-    public partial class Form1 : Form
+    public partial class Pizza : Form
     {
         private float _TotalPrice { get; set; }
-        public Form1()
+        public Pizza()
         {
             _TotalPrice = 0;
             InitializeComponent();
