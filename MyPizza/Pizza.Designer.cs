@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pizza));
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.btnResetForm = new System.Windows.Forms.Button();
             this.btnOrderPizza = new System.Windows.Forms.Button();
@@ -488,7 +489,7 @@
             this.gbSize.TabStop = false;
             this.gbSize.Text = "Size";
             // 
-            // Form1
+            // Pizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -503,7 +504,8 @@
             this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbTotalPrice);
             this.Controls.Add(this.gbSize);
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Pizza";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbOrderSummary.ResumeLayout(false);
