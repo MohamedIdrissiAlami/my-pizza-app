@@ -203,5 +203,18 @@ namespace MyPizza
             _UpdateTotalPrice();
             _UpdateOrderSummary();
         }
+
+        private void rbThinCrust_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void rbThickCrust_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
     }
 }

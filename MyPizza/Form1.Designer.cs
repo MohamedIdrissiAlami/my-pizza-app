@@ -322,6 +322,7 @@
             this.rbEatIn.Tag = "5";
             this.rbEatIn.Text = "Eat in";
             this.rbEatIn.UseVisualStyleBackColor = true;
+            this.rbEatIn.CheckedChanged += new System.EventHandler(this.rbEatIn_CheckedChanged);
             // 
             // rbTakeOut
             // 
@@ -336,6 +337,7 @@
             this.rbTakeOut.Tag = "0";
             this.rbTakeOut.Text = "Take Out";
             this.rbTakeOut.UseVisualStyleBackColor = true;
+            this.rbTakeOut.CheckedChanged += new System.EventHandler(this.rbTakeOut_CheckedChanged);
             // 
             // gbWhereToEat
             // 
@@ -377,6 +379,7 @@
             this.rbThickCrust.Tag = "10";
             this.rbThickCrust.Text = "Thick Crust";
             this.rbThickCrust.UseVisualStyleBackColor = true;
+            this.rbThickCrust.CheckedChanged += new System.EventHandler(this.rbThickCrust_CheckedChanged);
             // 
             // rbThinCrust
             // 
@@ -392,6 +395,7 @@
             this.rbThinCrust.Tag = "7";
             this.rbThinCrust.Text = "Thin Crust";
             this.rbThinCrust.UseVisualStyleBackColor = true;
+            this.rbThinCrust.CheckedChanged += new System.EventHandler(this.rbThinCrust_CheckedChanged);
             // 
             // gbCrustType
             // 
