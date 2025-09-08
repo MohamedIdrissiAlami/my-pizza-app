@@ -419,6 +419,7 @@
             this.rbLarge.Tag = "20";
             this.rbLarge.Text = "Large";
             this.rbLarge.UseVisualStyleBackColor = true;
+            this.rbLarge.CheckedChanged += new System.EventHandler(this.rbLarge_CheckedChanged);
             // 
             // rbMedium
             // 
@@ -433,6 +434,7 @@
             this.rbMedium.Tag = "15";
             this.rbMedium.Text = "Medium";
             this.rbMedium.UseVisualStyleBackColor = true;
+            this.rbMedium.CheckedChanged += new System.EventHandler(this.rbMedium_CheckedChanged);
             // 
             // rbSmall
             // 
@@ -448,6 +450,7 @@
             this.rbSmall.Tag = "10";
             this.rbSmall.Text = "Small";
             this.rbSmall.UseVisualStyleBackColor = true;
+            this.rbSmall.CheckedChanged += new System.EventHandler(this.rbSmall_CheckedChanged);
             // 
             // gbTotalPrice
             // 

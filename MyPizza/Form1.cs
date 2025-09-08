@@ -186,5 +186,22 @@ namespace MyPizza
             }
 
         }
+
+        private void rbSmall_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+        private void rbMedium_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void rbLarge_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
     }
 }
