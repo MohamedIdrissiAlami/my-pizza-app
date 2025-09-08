@@ -225,6 +225,7 @@
             this.chkGreenPeppers.Tag = "2";
             this.chkGreenPeppers.Text = "Green Peppers";
             this.chkGreenPeppers.UseVisualStyleBackColor = true;
+            this.chkGreenPeppers.CheckedChanged += new System.EventHandler(this.chkGreenPeppers_CheckedChanged);
             // 
             // chkOnion
             // 
@@ -238,6 +239,7 @@
             this.chkOnion.Tag = "2";
             this.chkOnion.Text = "Onion";
             this.chkOnion.UseVisualStyleBackColor = true;
+            this.chkOnion.CheckedChanged += new System.EventHandler(this.chkOnion_CheckedChanged);
             // 
             // chkTomato
             // 
@@ -251,6 +253,7 @@
             this.chkTomato.Tag = "2";
             this.chkTomato.Text = "Tomato";
             this.chkTomato.UseVisualStyleBackColor = true;
+            this.chkTomato.CheckedChanged += new System.EventHandler(this.chkTomato_CheckedChanged);
             // 
             // chkMushrooms
             // 
@@ -264,6 +267,7 @@
             this.chkMushrooms.Tag = "2";
             this.chkMushrooms.Text = "Mushrooms";
             this.chkMushrooms.UseVisualStyleBackColor = true;
+            this.chkMushrooms.CheckedChanged += new System.EventHandler(this.chkMushrooms_CheckedChanged);
             // 
             // chkOlives
             // 
@@ -277,6 +281,7 @@
             this.chkOlives.Tag = "2";
             this.chkOlives.Text = "Olives";
             this.chkOlives.UseVisualStyleBackColor = true;
+            this.chkOlives.CheckedChanged += new System.EventHandler(this.chkOlives_CheckedChanged);
             // 
             // chkExtraCheese
             // 
@@ -290,6 +295,7 @@
             this.chkExtraCheese.Tag = "2";
             this.chkExtraCheese.Text = "Extra Cheese";
             this.chkExtraCheese.UseVisualStyleBackColor = true;
+            this.chkExtraCheese.CheckedChanged += new System.EventHandler(this.chkExtraCheese_CheckedChanged);
             // 
             // gbToppings
             // 

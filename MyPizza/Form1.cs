@@ -12,7 +12,7 @@ namespace MyPizza
 {
     public partial class Form1 : Form
     {
-        private float _TotalPrice;
+        private float _TotalPrice { get; set; }
         public Form1()
         {
             _TotalPrice = 0;
@@ -123,12 +123,12 @@ namespace MyPizza
 
         private float  _GetToppingsCheckBoxPrice(CheckBox chk,bool IsChecked)
         {
-            if (float.TryParse(chk.Tag?.ToString(), out float Price))
+            if(IsChecked)
             {
-                return Price;
+                return float.TryParse(chk.Tag?.ToString(), out float Price) ? Price : 0;
+
             }
-            else
-                return 0;
+            return 0;
         }
         private float _CalculateToppingsPrice()
         {
@@ -187,6 +187,8 @@ namespace MyPizza
 
         }
 
+
+        //size
         private void rbSmall_CheckedChanged(object sender, EventArgs e)
         {
             _UpdateTotalPrice();
@@ -204,6 +206,8 @@ namespace MyPizza
             _UpdateOrderSummary();
         }
 
+
+        //crust type
         private void rbThinCrust_CheckedChanged(object sender, EventArgs e)
         {
             _UpdateTotalPrice();
@@ -215,6 +219,8 @@ namespace MyPizza
             _UpdateTotalPrice();
             _UpdateOrderSummary();
         }
+
+        //where to eat
         private void rbEatIn_CheckedChanged(object sender, EventArgs e)
         {
             _UpdateTotalPrice();
@@ -227,5 +233,41 @@ namespace MyPizza
             _UpdateOrderSummary();
         }
 
+        //toppings
+        private void chkExtraCheese_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void chkOnion_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void chkMushrooms_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void chkOlives_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void chkTomato_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
+
+        private void chkGreenPeppers_CheckedChanged(object sender, EventArgs e)
+        {
+            _UpdateTotalPrice();
+            _UpdateOrderSummary();
+        }
     }
 }
