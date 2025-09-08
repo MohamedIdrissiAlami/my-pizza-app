@@ -115,6 +115,7 @@
             this.btnOrderPizza.TabIndex = 15;
             this.btnOrderPizza.Text = "ORDER PIZZA";
             this.btnOrderPizza.UseVisualStyleBackColor = false;
+            this.btnOrderPizza.Click += new System.EventHandler(this.btnOrderPizza_Click);
             // 
             // lblToppings
             // 

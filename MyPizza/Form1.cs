@@ -159,6 +159,7 @@ namespace MyPizza
             _ResetWhereToEat();
             _UpdateOrderSummary();
             _UpdateTotalPrice();
+            btnOrderPizza.Visible = true;
         }
         private void btnResetForm_Click(object sender, EventArgs e)
         {
@@ -169,6 +170,21 @@ namespace MyPizza
         {
             _UpdateOrderSummary();
             _UpdateTotalPrice();
+        }
+
+        private void btnOrderPizza_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Confirm Order", "Place New Order", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.OK)
+            {
+                MessageBox.Show("Order placed successfully", "Succeeded");
+                gbSize.Enabled = false;
+                gbCrustType.Enabled = false;
+                gbToppings.Enabled = false;
+                gbWhereToEat.Enabled = false;
+
+                btnOrderPizza.Visible = false;
+            }
+
         }
     }
 }
