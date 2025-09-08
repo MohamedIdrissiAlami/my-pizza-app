@@ -68,7 +68,8 @@ namespace MyPizza
             if (chkTomato.Checked)
                 sToppings += chkTomato.Text + ",";
 
-            lblToppings.Text = (sToppings.EndsWith(",")? sToppings.Substring(0, sToppings.Length - 1) : sToppings).Trim();
+            sToppings = ((sToppings.EndsWith(",")? sToppings.Substring(0, sToppings.Length - 1) : sToppings)).Trim();
+            lblToppings.Text = sToppings != "" ? sToppings : "No Toppings";
         }
         private void _UpdateWhereToEatLabel()
         {
@@ -162,6 +163,12 @@ namespace MyPizza
         private void btnResetForm_Click(object sender, EventArgs e)
         {
             _ResetForm();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            _UpdateOrderSummary();
+            _UpdateTotalPrice();
         }
     }
 }
